@@ -1,12 +1,14 @@
 /* global setting */
-* {
+*,
+*:before,
+*:after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  font-family: sans-serif;
+  font-family: Helvetica, sans-serif;
   height: 100vh;
   background-image: url("../images/background.png");
   background-position: center;
@@ -45,9 +47,11 @@ main {
   height: 90vh;
   display: grid;
   place-items: center;
+  /* will active soon */
+  overflow: hidden;
 }
 .container {
-  width: 90vw;
+  width: 80vw;
   border-radius: 11px;
   padding: 1rem;
   display: grid;
@@ -106,10 +110,78 @@ main {
 .whatsapp-chats__icons-note-icon {
   width: 24px;
 }
-.whatsapp-chats__searching-input {
-  /* background-color: #54656f; */
-  /* padding: 2rem; */
-  background-color: #54656f79;
+/* searching icon */
+.whatsapp-chats__searching {
+  background-color: #f0f2f5;
+  border-radius: 11px;
   display: flex;
   align-items: center;
+  padding: 8px 10px;
+  margin-top: 0.5rem;
+}
+.whatsapp-chats__searching-input {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.whatsapp-chats__searching-input input {
+  border: 0;
+  background-color: #f0f2f5;
+}
+/* chats */
+.whatsapp-chats__container {
+  margin-top: 1rem;
+  /* display: grid;
+  align-items: center;
+  grid-template-columns: 0.5fr 2fr 1fr;
+  column-gap: 0.8rem; */
+}
+
+.whatsapp-chats_chat-grid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 0.5fr 2fr 1fr;
+  column-gap: 0.8rem;
+
+  padding: 0.2rem 0.55rem;
+  margin-bottom: 1rem;
+}
+/* .whatsapp-chats_chat-1 {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 0.5fr 2fr 1fr;
+  column-gap: 0.8rem;
+} */
+
+.whatsapp-chats_chat-2 {
+  background-color: #f0f2f5;
+  border-radius: 7px;
+}
+.whatsapp-chats__date,
+.whatsapp-chats__names {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.whatsapp-chats__date {
+  align-items: flex-end;
+}
+.whatsapp-chats__date-text {
+  font-size: 10px;
+}
+.whatsapp-chats__img img {
+  /* width: 40px; */
+}
+
+.whatsapp-chats__names-title {
+  font-size: 16px;
+}
+.whatsapp-chats__names-paragraph {
+  font-size: 12px;
+}
+.unread-color {
+  color: #1da855;
 }
