@@ -1,0 +1,15 @@
+/* global setting */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* centering image to center */
+main {
+  height: 100vh;
+  background-image: url("../images/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
